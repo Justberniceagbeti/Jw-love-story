@@ -69,19 +69,38 @@ nav{
 .navlinks a:hover{color:var(--gold)}
 
 .hero{
+  .hero{
   min-height:calc(100vh - 82px);
   display:flex;
   justify-content:center;
-  align-items:center;
+  align-items:flex-end;
   text-align:center;
   position:relative;
   overflow:hidden;
   color:white;
+
   background-image:
-    linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+    linear-gradient(rgba(0,0,0,.18),rgba(0,0,0,.18)),
     url("theJWLOVESTORY2026002.jpg");
+
   background-size:cover;
-  background-position:center;
+  background-position:center center;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  width:100%;
+  padding:0 20px 90px;
+}
+
+.hero h1{
+  font-family:var(--sans);
+  font-size:clamp(28px,5vw,58px);
+  font-weight:600;
+  letter-spacing:3px;
+  line-height:1;
+  color:#fff;
 }
 
 .hero-content{
@@ -423,6 +442,14 @@ footer p{
 }
 
 @media(max-width:800px){
+  .hero-content{
+  padding-bottom:85px;
+}
+
+.hero h1{
+  font-size:30px;
+  letter-spacing:2px;
+}
 
   nav{height:70px}
 
@@ -467,6 +494,14 @@ footer p{
 }
 
 @media(max-width:500px){
+  .hero-content{
+  padding-bottom:70px;
+}
+
+.hero h1{
+  font-size:25px;
+  letter-spacing:1.5px;
+}
 
   .navlinks a:nth-child(1){display:none}
 
