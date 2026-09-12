@@ -510,33 +510,83 @@ section{
   text-align:center;
 }
 
-.gifts-content{
+.gifts .section-head{
   max-width:700px;
-  margin:auto;
+  margin:0 auto;
 }
 
-.gifts h2{
+.gift-card{
+  max-width:720px;
+  margin:65px auto 0;
+  padding:65px 55px;
+  background:#fff;
+  border:1px solid rgba(79,32,43,.12);
+  box-shadow:0 18px 45px rgba(0,0,0,.06);
+}
+
+.gift-icon{
   font-family:var(--serif);
-  color:var(--burgundy);
-  font-size:65px;
+  font-size:42px;
+  color:var(--gold);
+  margin-bottom:20px;
+}
+
+.gift-card h3{
+  font-family:var(--serif);
+  font-size:46px;
   font-weight:500;
+  color:var(--burgundy);
+  margin-bottom:18px;
 }
 
-.gifts p{
+.gift-card > p{
   color:var(--muted);
-  margin:20px 0;
+  line-height:1.8;
 }
 
-.account{
-  margin:35px auto;
-  padding:30px;
-  background:white;
-  border:1px solid rgba(79,32,43,.1);
-  text-align:left;
+.account-details{
+  margin:40px auto 0;
+  border-top:1px solid rgba(79,32,43,.12);
+  border-bottom:1px solid rgba(79,32,43,.12);
 }
 
-.account p{
-  margin:7px 0;
+.account-row{
+  padding:22px 0;
+  border-bottom:1px solid rgba(79,32,43,.08);
+}
+
+.account-row:last-child{
+  border-bottom:none;
+}
+
+.account-row span{
+  display:block;
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--mauve);
+  margin-bottom:8px;
+}
+
+.account-row strong{
+  font-weight:500;
+  color:var(--burgundy);
+}
+
+.gift-thankyou{
+  margin-top:30px;
+  font-size:14px;
+}
+
+@media(max-width:800px){
+  .gift-card{
+    margin-top:50px;
+    padding:50px 25px;
+  }
+
+  .gift-card h3{
+    font-size:40px;
+  }
 }
 
 footer{
@@ -1373,37 +1423,41 @@ footer p{
 <!-- GIFTS -->
 <section class="gifts" id="gifts">
 
-  <div class="gifts-content">
-
+  <div class="section-head">
     <div class="eyebrow">With Love</div>
-
     <h2>Gifts</h2>
-
     <p>
       Your presence at our wedding is the greatest gift we could ask for.
+      But if you would like to bless us as we begin this beautiful new chapter,
+      we would be truly grateful.
     </p>
+  </div>
 
-    <p>
-      But if you would like to bless us as we begin this beautiful new
-      chapter together, we would be truly grateful.
-    </p>
+  <div class="gift-card">
+
+    <div class="gift-icon">♡</div>
+
+    <h3>Bless Our Beginning</h3>
 
     <p>
       Your love, prayers and generosity mean so much to us.
     </p>
 
+    <div class="account-details">
 
-    <div class="account">
+  <div class="account-row">
+    <span>Joy Okula</span>
+    <strong>Access Bank · 0075384594</strong>
+  </div>
 
-      <p><strong>Account Name:</strong> __________________</p>
+  <div class="account-row">
+    <span>Williams Agbeti</span>
+    <strong>GTBank · 0149113185</strong>
+  </div>
 
-      <p><strong>Bank:</strong> __________________</p>
+</div>
 
-      <p><strong>Account Number:</strong> __________________</p>
-
-    </div>
-
-    <p>
+    <p class="gift-thankyou">
       Thank you for celebrating our love and blessing our new beginning with us. 🤍
     </p>
 
