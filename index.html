@@ -295,7 +295,88 @@ section{
   color:var(--muted);
   margin:8px 0;
 }
+/* PREMIUM WEDDING EVENTS */
 
+.wedding-feature{
+  max-width:1100px;
+  margin:90px auto 0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:stretch;
+  background:#fff;
+}
+
+.wedding-feature + .wedding-feature{
+  margin-top:110px;
+}
+
+.wedding-feature.reverse .wedding-image{
+  order:2;
+}
+
+.wedding-feature.reverse .wedding-details{
+  order:1;
+}
+
+.wedding-image{
+  min-height:560px;
+  overflow:hidden;
+}
+
+.wedding-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.wedding-details{
+  padding:70px 65px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:var(--cream);
+}
+
+.wedding-details .small{
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--mauve);
+  margin-bottom:25px;
+}
+
+.wedding-details h3{
+  font-family:var(--serif);
+  font-size:48px;
+  line-height:1.05;
+  font-weight:500;
+  color:var(--burgundy);
+  margin-bottom:40px;
+}
+
+.event-date{
+  font-family:var(--serif);
+  font-size:25px;
+  line-height:1.45;
+  color:var(--burgundy);
+}
+
+.event-date strong{
+  font-weight:500;
+}
+
+.event-info{
+  margin-top:30px;
+  padding-top:25px;
+  border-top:1px solid rgba(79,32,43,.12);
+}
+
+.event-info p{
+  color:var(--muted);
+  line-height:1.8;
+  margin-bottom:12px;
+}
 .invitation{
   background:var(--ivory);
   text-align:center;
@@ -480,7 +561,35 @@ footer p{
   .gallery-grid{
     grid-template-columns:1fr 1fr;
   }
+  .wedding-feature{
+    grid-template-columns:1fr;
+    margin-top:55px;
+  }
 
+  .wedding-feature + .wedding-feature{
+    margin-top:70px;
+  }
+
+  .wedding-feature.reverse .wedding-image{
+    order:1;
+  }
+
+  .wedding-feature.reverse .wedding-details{
+    order:2;
+  }
+
+  .wedding-image{
+    min-height:420px;
+  }
+
+  .wedding-details{
+    padding:50px 28px;
+  }
+
+  .wedding-details h3{
+    font-size:40px;
+    margin-bottom:30px;
+  }
   .gallery-grid img{
     height:260px;
   }
@@ -937,58 +1046,89 @@ footer p{
 <section class="events" id="wedding">
 
   <div class="section-head">
+    <div class="eyebrow">The Wedding</div>
 
-    <div class="eyebrow">Save the Dates</div>
-
-    <h2>The Wedding</h2>
+    <h2>Two Celebrations.<br>One Beautiful Beginning.</h2>
 
     <p>
-      Two beautiful celebrations. One beautiful beginning.
+      Two special days. Two beautiful celebrations.
+      One beginning we cannot wait to share with you.
     </p>
+  </div>
+
+
+  <!-- TRADITIONAL WEDDING -->
+  <div class="wedding-feature">
+
+    <div class="wedding-image">
+      <img
+        src="theJWLOVESTORY202611.jpg"
+        alt="Joy and Williams">
+    </div>
+
+    <div class="wedding-details">
+
+      <div class="small">01 — Traditional Wedding</div>
+
+      <h3>A Celebration of Heritage</h3>
+
+      <div class="event-date">
+        Saturday<br>
+        <strong>19 September 2026</strong>
+      </div>
+
+      <div class="event-info">
+        <p>1:00 PM</p>
+
+        <p>
+          NNPC Housing Estate<br>
+          Ekpan, Warri
+        </p>
+      </div>
+
+    </div>
 
   </div>
 
 
-  <div class="event-grid">
+  <!-- CHURCH WEDDING -->
+  <div class="wedding-feature reverse">
 
-    <div class="event-card">
-
-      <div class="small">Traditional Wedding</div>
-
-      <h3>Joy & Williams</h3>
-
-      <p><strong>Saturday, 19th September 2026</strong></p>
-
-      <p>1:00 PM</p>
-
-      <p>NNPC Housing Estate</p>
-
-      <p>Ekpan, Warri</p>
-
+    <div class="wedding-image">
+      <img
+        src="theJWLOVESTORY2026009.jpg"
+        alt="Joy and Williams">
     </div>
 
+    <div class="wedding-details">
 
-    <div class="event-card">
-
-      <div class="small">Church Wedding</div>
+      <div class="small">02 — Church Wedding</div>
 
       <h3>Holy Matrimony</h3>
 
-      <p><strong>Tuesday, 22nd September 2026</strong></p>
+      <div class="event-date">
+        Tuesday<br>
+        <strong>22 September 2026</strong>
+      </div>
 
-      <p>10:00 AM</p>
+      <div class="event-info">
+        <p>10:00 AM</p>
 
-      <p>The L.O.G.I.C Church</p>
-
-      <p>Block 115 T.F Kuboye Road</p>
-
-      <p>Marwa Bus-Stop, Lekki, Lagos</p>
+        <p>
+          The L.O.G.I.C Church<br>
+          Block 115 T.F Kuboye Road<br>
+          Marwa Bus-Stop, Lekki, Lagos
+        </p>
+      </div>
 
     </div>
 
   </div>
 
 </section>
+
+
+<!-- INVITATION -->
 
 
 <!-- INVITATION -->
