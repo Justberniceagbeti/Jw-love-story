@@ -782,6 +782,42 @@ footer p{
     margin-top:45px;
   }
 }
+.download-photo{
+  display:block;
+  position:relative;
+  text-decoration:none;
+  color:var(--burgundy);
+  font-size:10px;
+  letter-spacing:2px;
+  text-align:center;
+  padding:14px 10px;
+  background:#fff;
+  transition:opacity .3s ease;
+}
+
+.download-photo:hover{
+  opacity:.65;
+}
+
+.download-photo img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  display:block;
+  margin:0;
+}
+
+@media(max-width:800px){
+  .download-photo img{
+    height:280px;
+  }
+
+  .download-photo{
+    font-size:9px;
+    padding:12px 6px;
+    letter-spacing:1.5px;
+  }
+}
 </style>
 </head>
 
@@ -1507,6 +1543,17 @@ footer p{
   </p>
 
 </footer>
+<script>
+document.querySelectorAll('.gallery-grid img').forEach(function(img) {
+  const link = document.createElement('a');
+  link.href = img.src;
+  link.download = img.src.split('/').pop();
+  link.className = 'download-photo';
+  link.textContent = '↓ DOWNLOAD PHOTO';
 
+  img.parentNode.insertBefore(link, img);
+  link.appendChild(img);
+});
+</script>
 </body>
 </html>
