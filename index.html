@@ -654,6 +654,43 @@ footer p{
   }
 
 }
+/* CINEMATIC VIDEO */
+.video-section{
+  padding:110px 24px;
+  background:var(--ivory);
+}
+
+.video-section .section-head{
+  max-width:700px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.video-frame{
+  max-width:900px;
+  margin:60px auto 0;
+  background:#000;
+  box-shadow:0 25px 60px rgba(0,0,0,.16);
+  overflow:hidden;
+}
+
+.video-frame video{
+  width:100%;
+  height:auto;
+  display:block;
+  max-height:720px;
+  object-fit:contain;
+}
+
+@media(max-width:800px){
+  .video-section{
+    padding:80px 18px;
+  }
+
+  .video-frame{
+    margin-top:45px;
+  }
+}
 </style>
 </head>
 
@@ -1084,6 +1121,24 @@ footer p{
 
 <!-- WEDDING -->
 
+
+<!-- VIDEO -->
+<section class="video-section">
+  <div class="section-head">
+    <div class="eyebrow">The JW Love Story</div>
+    <h2>A Little More of Us</h2>
+    <p>
+      A little glimpse into the love, laughter and moments that brought us here.
+    </p>
+  </div>
+
+  <div class="video-frame">
+    <video controls playsinline preload="metadata">
+      <source src="theJWLOVESTORY2026_web.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
 
 <!-- WEDDING -->
 <section class="events" id="wedding">
