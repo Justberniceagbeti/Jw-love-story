@@ -459,33 +459,50 @@ section{
   }
 .rsvp{
   background:var(--ivory);
+  text-align:center;
+}
+
+.rsvp .section-head{
+  max-width:700px;
 }
 
 .rsvp-box{
-  max-width:650px;
-  margin:auto;
+  max-width:720px;
+  margin:70px auto 0;
+  padding:70px 55px;
+  background:var(--cream);
+  border:1px solid rgba(79,32,43,.12);
   text-align:center;
-  background:white;
-  padding:55px;
-  border:1px solid rgba(79,32,43,.1);
+}
+
+.rsvp-number{
+  font-size:11px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:25px;
 }
 
 .rsvp-box h3{
   font-family:var(--serif);
   color:var(--burgundy);
   font-size:50px;
+  line-height:1.05;
   font-weight:500;
+  margin-bottom:20px;
 }
 
 .rsvp-box p{
+  max-width:500px;
+  margin:0 auto 30px;
   color:var(--muted);
-  margin:15px 0 30px;
 }
 
 .form-note{
   font-size:12px;
   color:var(--muted);
   margin-top:20px;
+  opacity:.8;
 }
 
 .gifts{
@@ -1318,31 +1335,34 @@ footer p{
 <section class="rsvp" id="rsvp">
 
   <div class="section-head">
-
     <div class="eyebrow">We Hope You’ll Join Us</div>
-
-    <h2>RSVP</h2>
-
+    <h2>Will You Celebrate With Us?</h2>
+    <p>
+      Your presence would make these special moments even more meaningful.
+      Please let us know if you’ll be joining us.
+    </p>
   </div>
-
 
   <div class="rsvp-box">
 
-    <h3>Will you celebrate with us?</h3>
+    <div class="rsvp-number">RSVP</div>
+
+    <h3>We’d love to have you there.</h3>
 
     <p>
-      Please confirm your attendance so we can prepare to welcome you.
+      Kindly confirm your attendance by completing our RSVP form.
     </p>
 
     <a
       class="button"
       href="https://forms.google.com/"
-      target="_blank">
+      target="_blank"
+      rel="noopener">
       RSVP NOW
     </a>
 
     <div class="form-note">
-      Your RSVP form will be connected here.
+      Please submit one response per guest.
     </div>
 
   </div>
